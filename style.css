@@ -316,7 +316,7 @@ p > #spn {
 }
 
 
-.rightmenu, .announce, .notifi{
+.rightmenu, .extra, .notifi{
     display: none;
 }
 
@@ -397,13 +397,20 @@ p > #spn {
         display: block;
     }
     
+
+
+
+
+
     .announce {
-        display:none;
+        display: none;
+        position: relative;
+    }
+    .extrass {
         background-color: white;
         color: green;
         position: absolute;
         box-shadow: 5px 10px 20px #888888;
-        top: 45px;
         right: 0px;
         height: 500px;
         width: 450px;
@@ -411,81 +418,87 @@ p > #spn {
         scrollbar-width: thin;
         scrollbar-color: 5d5d5d9b;
     }
+    .ftrr{
+        background-color: white;
+        width: 450px;
+        position: absolute;
+        padding: 10px 0px;
+        right: 0px;
+        top: 499px;
+        display: flex;
+        justify-content: center;
+        box-shadow: 5px 10px 20px #888888;
+        border-top: 1px solid rgba(128, 128, 128, 0.261);
+    }
+    .ftrr > p {
+        color: green;
+    }
     
-    .announce >  div>  div {
+    .extrass > div{
         border-bottom: 1px solid grey;
         padding: 15px;
     }
 
-    .announce > div>  div > div:nth-child(1) {
+    .extrass > div > div:nth-child(1) {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-    .announce >  div>  div > div:nth-child(3){
+    .extrass > div > div:nth-child(3){
         display: flex;
         margin-top: 10px;
         font-size: 14px;
     }
-    .announce >  div>  div > div:nth-child(3) > p:nth-child(2){
+    .extrass > div > div:nth-child(3) > p:nth-child(2){
         margin-left: 10px;
     }
-    .announce > div>  div >  div:nth-child(3) > p:nth-child(3){
-        margin-left: 40px;
+    .extrass > div >  div:nth-child(3) > p:nth-child(3){
+        margin-left: auto;
     }
 
-    .announce::-webkit-scrollbar {
+    .extrass::-webkit-scrollbar {
         width: 8px;
     }
 
-    .announce::-webkit-scrollbar-track {
+    .extrass::-webkit-scrollbar-track {
         background: #ffffff;
     }
 
-    .announce::-webkit-scrollbar-thumb {
+    .extrass::-webkit-scrollbar-thumb {
         background-color: #5d5d5d9b;
         border-radius: 20px;
     }
 
-
-    .ftrr{
-        padding: 10px;
-        display: flex;
-        justify-content: space-around;
-    }
-
-    .ftrr > p {
-        color: green;
-    }
-
     .announcement:hover .announce{
         display: block;
-        transition: hover 2S;
     }
 
-    .notifi {
-        display:none;
+
+
+
+
+    .notifi{
+        display: none;
+        position: relative;
+    }
+    .extras {
         background-color: white;
         color: green;
         position: absolute;
         box-shadow: 5px 10px 20px #888888;
-        top: 45px;
         right: 0px;
         height: 480px;
         width: 400px;
         overflow-y:scroll;
         scrollbar-width: thin;
-        scrollbar-color: 5d5d5d9b ;
-    }
-    .notifi > .extra {
-        position: relative;
+        scrollbar-color: #5d5d5d9b ;
     }
     .btnn{
         width: 400px;
         border: none;
-        position: fixed;
-        right: 240px;
-        top: 540px;
+        position: absolute;
+        right: 0px;
+        top: 479px;
         border-top: 1px solid rgba(128, 128, 128, 0.261);
         background-color: white;
         color: green;
@@ -493,34 +506,34 @@ p > #spn {
         box-shadow: 5px 10px 20px #888888;
         font-size: 18px;
     }
-    .notifi::-webkit-scrollbar {
+    .extras::-webkit-scrollbar {
         width: 8px;
     }
 
-    .notifi::-webkit-scrollbar-track {
+    .extras::-webkit-scrollbar-track {
         background: #ffffff;
     }
 
-    .notifi::-webkit-scrollbar-thumb {
+    .extras::-webkit-scrollbar-thumb {
         background-color: #5d5d5d9b;
         border-radius: 20px;
     }
-    .notifi > div> div{
+    .extras > div{
         border-bottom: 1px solid grey;
         padding: 15px;
     }
-    .notifi > div > div> div{
+    .extras > div> div{
         display: flex;
         justify-content: space-between;
     }
-    .notifi > div> div > .tim {
+    .extras > div > .tim {
         margin: 15px  0px 0px;
         display: flex;
         align-items: end;
         justify-content: right;
     }
 
-    .nottifica:hover .notifi{
+    .nottifica:hover .notifi {
         display: block;
     }
 
