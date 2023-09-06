@@ -1,7 +1,7 @@
 let items = document.getElementById("items");
-var itm = document.getElementsByClassName("itm");
+let itm = document.getElementsByClassName("itm");
 
-for(var i=0;i<itm.length;i++){
+for(let i=0;i<itm.length;i++){
   itm[i].addEventListener("click", function() {
     let current = document.getElementsByClassName("active");
     if (current.length > 0) { 
@@ -17,16 +17,15 @@ let value =  async () => {
 
   const response = await fetch("./data.json");
   let data = await response.json();
-
   let div1 = document.createElement("div");
   div1.classList.add("content");
   document.body.insertBefore(div1, document.getElementById('ftr'));
 
 
-  for(let i=0;i<4;i++){
+  for(let i=0;i<data.length;i++){
 
     let div2 = document.createElement("div");
-    if(i==3) {
+    if(data[i].isExpired) {
       div2.classList.add("container-1", "container-2");
       div1.appendChild(div2);
       let extradiv = document.createElement("div");
@@ -65,6 +64,10 @@ let value =  async () => {
     sideimg.classList.add("img");
     sideimg.setAttribute("src",data[i].sideimage);
     div5.appendChild(sideimg);
+
+    if(i==3){
+      sideimg.setAttribute("class","spl");
+    }
 
     let para = document.createElement("p");
     div4.appendChild(para);
@@ -126,7 +129,7 @@ let value =  async () => {
     for (let j = 0; j < data[i].select.length; j++) {
       sel.innerHTML = sel.innerHTML + '<option>' + data[i].select[j]+ '</option>';
     }
-    if(i==1){
+    if(data[i].select[0]=="No Class"){
       sel.style.opacity = "0.4";
     }
     div4.appendChild(sel);

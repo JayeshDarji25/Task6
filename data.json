@@ -15,7 +15,8 @@
         "img1":"images/eye.svg",
         "img2":"images/manage course.svg",
         "img3":"images/grade submissions.svg",
-        "img4":"images/reports.svg"
+        "img4":"images/reports.svg",
+        "isExpired":false
     },
     {
         "image": "images/imageMask-1.png",
@@ -33,7 +34,8 @@
         "img1":"images/eye.svg",
         "img2":"images/manage course.svg",
         "img3":"images/grade submissions.svg",
-        "img4":"images/reports.svg"
+        "img4":"images/reports.svg",
+        "isExpired":false
     },
     {
         "image": "images/imageMask-3.png",
@@ -51,7 +53,8 @@
         "img1":"images/eye.svg",
         "img2":"images/manage course.svg",
         "img3":"images/grade submissions.svg",
-        "img4":"images/reports.svg"
+        "img4":"images/reports.svg",
+        "isExpired":false
     },
     {
         "image": "images/imageMask-2.png",
@@ -69,7 +72,8 @@
         "img1":"images/eye.svg",
         "img2":"images/manage course.svg",
         "img3":"images/grade submissions.svg",
-        "img4":"images/reports.svg"
+        "img4":"images/reports.svg",
+        "isExpired":true
     }
 ]
 

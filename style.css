@@ -217,6 +217,15 @@ h5{
     height: 35px;
 }
 
+.spl{
+    filter: grayscale(100%);
+    opacity: 0.4;
+    width: 25px;
+    margin-left: 10px;
+    height: 25px;
+}
+
+
 p {
     margin-bottom: 9px;
     font-weight: 500;
@@ -314,7 +323,6 @@ p > #spn {
     margin-bottom: 0px;
     color: rgb(69, 68, 68);
 }
-
 
 .rightmenu, .announce, .notifi{
     display: none;
