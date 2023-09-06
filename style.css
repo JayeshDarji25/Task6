@@ -316,7 +316,7 @@ p > #spn {
 }
 
 
-.rightmenu, .extra, .notifi{
+.rightmenu, .announce, .notifi{
     display: none;
 }
 
@@ -397,10 +397,6 @@ p > #spn {
         display: block;
     }
     
-
-
-
-
 
     .announce {
         display: none;
