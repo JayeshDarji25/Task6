@@ -16,7 +16,11 @@
         "img2":"images/manage course.svg",
         "img3":"images/grade submissions.svg",
         "img4":"images/reports.svg",
-        "isExpired":false
+        "isExpired":false,
+        "imgActive1":true,
+        "imgActive2":true,
+        "imgActive3":true,
+        "imgActive4":true
     },
     {
         "image": "images/imageMask-1.png",
@@ -35,7 +39,11 @@
         "img2":"images/manage course.svg",
         "img3":"images/grade submissions.svg",
         "img4":"images/reports.svg",
-        "isExpired":false
+        "isExpired":false,
+        "imgActive1":true,
+        "imgActive2":false,
+        "imgActive3":false,
+        "imgActive4":true
     },
     {
         "image": "images/imageMask-3.png",
@@ -54,7 +62,11 @@
         "img2":"images/manage course.svg",
         "img3":"images/grade submissions.svg",
         "img4":"images/reports.svg",
-        "isExpired":false
+        "isExpired":false,
+        "imgActive1":true,
+        "imgActive2":false,
+        "imgActive3":false,
+        "imgActive4":true
     },
     {
         "image": "images/imageMask-2.png",
@@ -73,7 +85,11 @@
         "img2":"images/manage course.svg",
         "img3":"images/grade submissions.svg",
         "img4":"images/reports.svg",
-        "isExpired":true
+        "isExpired":true,
+        "imgActive1":true,
+        "imgActive2":true,
+        "imgActive3":true,
+        "imgActive4":true
     }
 ]
 

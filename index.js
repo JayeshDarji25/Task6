@@ -12,7 +12,6 @@ for(let i=0;i<itm.length;i++){
 }
 
 
-
 let value =  async () => {
 
   const response = await fetch("./data.json");
@@ -65,7 +64,7 @@ let value =  async () => {
     sideimg.setAttribute("src",data[i].sideimage);
     div5.appendChild(sideimg);
 
-    if(i==3){
+    if(data[i].isExpired){
       sideimg.setAttribute("class","spl");
     }
 
@@ -142,7 +141,7 @@ let value =  async () => {
     spn8.innerText = data[i].students;
     para3.appendChild(spn8);
     
-    if(i==0 || i==3){
+    if(data[i].students && data[i].date){
       let spn9 = document.createElement("span");
       spn9.setAttribute("id","spn");
       para3.appendChild(spn9);
@@ -161,19 +160,23 @@ let value =  async () => {
     im1.setAttribute("id","img1");
     im1.setAttribute("src",data[i].img1);
     div6.appendChild(im1);
+    if(!data[i].imgActive1){
+      im1.style.opacity = "0.4";
+    }
 
     let im2 = document.createElement("img");
     im2.setAttribute("id","img2");
     im2.setAttribute("src",data[i].img2);
     div6.appendChild(im2);
+    if(!data[i].imgActive2){
+      im2.style.opacity = "0.4";
+    }
 
     let im3 = document.createElement("img");
     im3.setAttribute("id","img1");
     im3.setAttribute("src",data[i].img3);
     div6.appendChild(im3);
-
-    if(i==1 || i==2) {
-      im2.style.opacity = "0.4";
+    if(!data[i].imgActive3){
       im3.style.opacity = "0.4";
     }
 
@@ -181,7 +184,9 @@ let value =  async () => {
     im4.setAttribute("id","img1");
     im4.setAttribute("src",data[i].img4);
     div6.appendChild(im4);
-    
+    if(!data[i].imgActive4){
+      im4.style.opacity = "0.4";
+    }
   }
 
   
