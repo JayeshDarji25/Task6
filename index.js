@@ -12,7 +12,7 @@ for(let i=0;i<itm.length;i++){
 }
 
 
-let value =  async () => {
+let main =  async () => {
 
   const response = await fetch("./data.json");
   let data = await response.json();
@@ -189,6 +189,8 @@ let value =  async () => {
     }
   }
 
+main();
+
   
  /* let im = document.getElementById("main-image");
   let h5 = document.getElementsByTagName("h5")[2];
@@ -230,4 +232,3 @@ let value =  async () => {
 
 }
 
-value();

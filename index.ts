@@ -12,7 +12,7 @@ for(let i=0;i<it.length;i++){
 }
 
 
-async function val(): Promise<void> {
+async function final(): Promise<void> {
 
   try {
       const response = await fetch("./data.json");
@@ -198,4 +198,4 @@ async function val(): Promise<void> {
   }
 }
 
-val();
+final();
