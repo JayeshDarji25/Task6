@@ -189,7 +189,7 @@ let main =  async () => {
     }
   }
 
-main();
+
 
   
  /* let im = document.getElementById("main-image");
@@ -232,3 +232,4 @@ main();
 
 }
 
+main();
